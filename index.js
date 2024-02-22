@@ -11,7 +11,6 @@ program.parse();
 
 const options = program.opts();
 
-// TODO: рефакторити
 async function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case "list":
@@ -40,4 +39,4 @@ async function invokeAction({ action, id, name, email, phone }) {
 }
 
 invokeAction(options);
-// invokeAction({ action: 'remove', id: 'AeHIrLTr6JkxGE6SN-0Rw'});
+

@@ -29,9 +29,7 @@ export async function addContact(name, email, phone) {
     phone,
   };
 
-  // для додавання нового об'єкту треба перезаписати весь масив: 
   contacts.push(newContact);
-  // null, 2 - для відображення масиву об'єктів в contact.json в нестроковому вигляді  
   await updateContacts(contacts);
 
   return newContact;
